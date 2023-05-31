@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!---------------- HEAD TAG ---------------------->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Visit India</title>
+
+	<!------ CSS FILES --------->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<!---------------- BODY TAG ---------------------->
+<body>
+
+	<div class="first_front">
+
+
+		<!-------------- HEAD BAR  ------------>
+		<div class="head">
+
+			<h2 class="first_heading"> India </h2>
+
+			<!--------- NAVBAR ---------->
+			<nav class="navar">
+			   <a href=""> HOME </a>
+			   <a href="#info"> ABOUT </a>
+			   <a href="#places_section"> GALLERY </a>
+			   <a href="#contact"> CONTACT </a>
+			</nav>
+		</div>
+
+		<div class="main_content">
+
+			<h3>Welcome To India </h3>
+
+			<h1>DO COME AND VISIT <span id="change">Delhi</span></h1>
+
+			<h3>"India Once is not enough"</h3>
+
+
+			<div class="main_buttons">
+				
+				<button class="learn">Learn More</button>
+				<button class="signup">SIGNUP HERE</button>
+				
+			</div>
+		</div>
+	</div>
+
+
+	<!----------------- INFO SECTION  ------------------------>
+	<section id="info">
+
+		<h2 class="second-heading"> INDIA </h2>
+
+		<p class="p1">India, our country is a huge and beautiful land full of wonders. From the Himalayas to the Indian Ocean, the Desert of Thar in the snowy mountains of Sikkim, it is a country full of beautiful landscapes and beautiful people. India is a unique country with diversity. "Unity is diversity" is the main slogan of the country.</p>
+
+		<p class="p2">The Himalayas, the world's highest mountain range, stand as an awe-inspiring destination in India. With snow-capped peaks, pristine lakes, and breathtaking valleys, the Himalayas offer a haven for adventure seekers, nature lovers, and spiritual enthusiasts alike</p>
+
+		<p class="p3">Goa, located along the scenic Arabian Sea coast, is renowned for its stunning beaches and vibrant party culture. From the popular stretches of Calangute and Baga to the serene and secluded beaches of Palolem and Agonda, Goa offers a diverse coastal experience for every traveler</p>
+
+		<p class="p4">No visit to India would be complete without experiencing the mesmerizing beauty of the Taj Mahal in Agra. Considered one of the Seven Wonders of the World, this architectural masterpiece is a testament to eternal love.
+		</p>
+
+		<p class="p1">Steeped in a rich tapestry of history, culture, and traditions, this vibrant nation holds a magnetic charm that promises an unforgettable experience. Embarking on a visit to India means immersing yourself in a cultural extravaganza like no other. From the kaleidoscope of colors and festivities during Diwali and Holi to the deeply spiritual rituals performed on the sacred banks of the Ganges in Varanasi, every moment in India is a captivating insight into its rich cultural heritage.</p>
+
+		<p class="p2">it is the warm hospitality of the Indian people that truly sets this nation apart. The locals' genuine warmth, friendly smiles, and open-heartedness make you feel like an honored guest. Interactions with the locals provide insight into their vibrant traditions and customs, creating cherished memories that will stay with you long after your visit.</p>
+
+		<p class="p3">India, with its amalgamation of ancient heritage and modern dynamism, offers an immersive experience that is both enriching and enlightening. It beckons you to explore its depths, discover its hidden gems, and embrace the remarkable spirit that permeates every facet of this extraordinary land.</p>
+	</section>
+
+	<!----------------- INFO SECTION  ------------------------>
+	<section id="places_section">
+
+		<h2 class="third_heading">India's Must-Visit Treasures </h2>
+
+		<div class="beautiful_places">
+
+			<div class="place" id="places1"></div>
+			<div class="place" id="places2"></div>
+			<div class="place" id="places3"></div>
+			<div class="place" id="places4"></div>
+			<div class="place" id="places5"></div>
+			<div class="place" id="places6"></div>
+			
+		</div>
+		
+	</section>
+
+
+	<!----------------- INFO SECTION  ------------------------>
+	<section id="contact">
+
+		<h2 class="fourth_heading"> Contact </h2>
+
+		<form id="form">
+
+			<input type="name" class="name" name="" placeholder="Name" maxlength="30" required>
+
+			<input type="mail" name="" placeholder="Email" required>
+
+			<input type="name" name="" placeholder="Nationality" maxlength="30" required>
+
+			<textarea placeholder="let us Know what you need help with..." required></textarea>
+
+			<button type="submit">Submit</button>
+
+		</form>
+		
+	</section>
+
+
+	<!----------------- FOOTER SECTION  ------------------------>
+	<footer id="footer">
+
+		<h3 class="footer_slogan">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+
+		<div class="icons">	
+			<i class="fa fa-facebook-f"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-linkedin"></i>
+			<i class="fa fa-google"></i>
+			<i class="fa fa-github"></i>
+		</div>
+
+		<div class="last_line">
+
+			<i class="fa fa-copyright copy"></i>
+			<span class="copy">2023 Copyright : Abhay Mishra</span>
+		</div>
+
+	</footer>
+
+
+	<script type="text/javascript">
+
+		change = document.getElementById('change') ;
+		arr = ['Mumbai' , 'Kashmir', 'Kerala', 'Rajsthan', 'Gujrat' , 'Goa' , 'Chennai','Delhi'] ;
+		index = 0 ; 
+
+
+		setInterval(() => {
+
+			change.textContent = arr[index] ;
+			index++ ; 
+			index %= 8 ; 
+
+		} , 3000)
+		
+		
+		
+
+	</script>
+
+
+
+	
+	
+</body>
+</html>
